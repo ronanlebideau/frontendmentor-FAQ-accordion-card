@@ -1,0 +1,1 @@
+# frontendmentor-FAQ-accordion-card
