@@ -1,52 +1,75 @@
 /*colors*/
-:root{
-    /*text*/
-    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
-    --Soft-red: hsl(14, 88%, 65%);
-    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
-    --Dark-grayish-blue: hsl(240, 6%, 50%);
-    /*backgrounds*/
-    --Soft-violet: hsl(273, 75%, 66%);
-    --Soft-blue: hsl(240, 73%, 65%);
-    /*divider*/
-    --Light-grayish-blue: hsl(240, 5%, 91%);
+:root {
+  /*text*/
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  /*backgrounds*/
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  /*divider*/
+  --Light-grayish-blue: hsl(240, 5%, 91%);
 }
-body{
-    font-family: 'Kumbh Sans', sans-serif;
-    color:red;
-    background:linear-gradient(var(--Soft-violet),var(--Soft-blue));
-    height:100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: red;
+  background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-h1{
-    color:var(--Very-dark-desaturated-blue);
-    text-align: center;
-    font-size: 3em;
+h1 {
+  color: var(--Very-dark-desaturated-blue);
+  text-align: center;
+  font-size: 3em;
 }
-section{
-    background-color: white;
-    border-radius: 1.5em;
-    padding:2em;
+section {
+  background-color: white;
+  border-radius: 1.5em;
+  padding: 2em;
 }
-.q{
-    color:var(--Very-dark-grayish-blue);
-    font-size: 1em;
+.q-a {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
-.active{
-    color:var(--Very-dark-desaturated-blue);
-    font-weight: 700;
+.q {
+  color: var(--Very-dark-grayish-blue);
+  font-size: 1em;
+  width: 90%;
 }
-.none{
-    display:none;
+.q-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.deploy {
+  height: 8px;
+}
+.reduce {
+  height: 8px;
+  transform: rotate(180deg);
+}
+.active {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+}
+.none {
+  display: none;
+}
+.a {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.8em;
+  width: 90%;
+  margin-top: 1em;
 }
 
-.a{
-    color:var(--Dark-grayish-blue);
-    font-size: .8em;
+hr {
+  border-color: var(--Light-grayish-blue);
 }
-
-hr{
-    border-color:var(--Light-grayish-blue);
+button{
+    background: none;
+    border:none;
 }
