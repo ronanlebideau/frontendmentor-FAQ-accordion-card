@@ -1,54 +1,75 @@
-/*
-## Colors
-
-### Primary
-
-#### Text
-
-- Very dark desaturated blue: hsl(238, 29%, 16%)
-- Soft red: hsl(14, 88%, 65%)
-
-#### Gradient
-
-Background gradient:
-
-- Soft violet: hsl(273, 75%, 66%)
-- Soft blue: hsl(240, 73%, 65%)
-
-### Neutral
-
-#### Text
-
-- Very dark grayish blue: hsl(237, 12%, 33%)
-- Dark grayish blue: hsl(240, 6%, 50%)
-
-#### Dividers
-
-- Light grayish blue: hsl(240, 5%, 91%)
-*/
-
-:root{
-    --blue:hsl(238, 29%, 16%);
-    --red:hsl(14, 88%, 65%);
-    --violet:hsl(273, 75%, 66%);
-    --soft-blue:hsl(240, 73%, 65%);
-    --very-dark-grayish:hsl(237, 12%, 33%);
-    --dark-grayish:hsl(240,6%,50%);
-    --divider:hsl(240,5%,91%);
+/*colors*/
+:root {
+  /*text*/
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  /*backgrounds*/
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  /*divider*/
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: red;
+  background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  color: var(--Very-dark-desaturated-blue);
+  text-align: center;
+  font-size: 3em;
+}
+section {
+  background-color: white;
+  border-radius: 1.5em;
+  padding: 2em;
+}
+.q-a {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.q {
+  color: var(--Very-dark-grayish-blue);
+  font-size: 1em;
+  width: 90%;
+}
+.q-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.deploy {
+  height: 8px;
+}
+.reduce {
+  height: 8px;
+  transform: rotate(180deg);
+}
+.active {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+}
+.none {
+  display: none;
+}
+.a {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.8em;
+  width: 90%;
+  margin-top: 1em;
 }
 
-body{
-    background: linear-gradient(var(--violet), var(--soft-blue));
-    height:100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:1em;
+hr {
+  border-color: var(--Light-grayish-blue);
 }
-.container{
-    position:relative;
-    background-color: #fff;
-    padding:1.5em;
-    border-radius: 1.5em;
+button{
+    background: none;
+    border:none;
 }
